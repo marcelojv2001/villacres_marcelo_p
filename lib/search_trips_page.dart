@@ -34,23 +34,24 @@ class SearchTripsPage extends StatelessWidget {
       ),
       body: Stack(
         children: [
-          // Fondo de la pantalla
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                 image: AssetImage('assets/images/mountains.jpg'),
+                image: AssetImage('assets/images/cascade.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
           ),
-          // Contenido de la página
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const SizedBox(height: 20),
+          Container(
+            color: Colors.black.withOpacity(0.4), 
+            child: const Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(height: 20),
 
-              ],
+                ],
+              ),
             ),
           ),
         ],
