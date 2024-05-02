@@ -22,13 +22,18 @@ class HomeTripsPage extends StatelessWidget {
               descriptionPlace: descriptionDummy,
             ),
             const Padding(
-              padding: EdgeInsets.all(
-                  8.0),
-              child: Text(
-                'All reviews',
-                textAlign: TextAlign.left,
+              padding: EdgeInsets.all(8.0),
+              child: Row(
+                children: <Widget>[
+                  Text(
+                    'All reviews',
+                    textAlign: TextAlign.right,
+                  ),
+
+                ],
               ),
             ),
+
             const ReviewList(),
           ],
         ),

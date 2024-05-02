@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'review.dart';
 
+
 class ReviewList extends StatelessWidget {
   const ReviewList({super.key});
 
@@ -12,6 +13,11 @@ class ReviewList extends StatelessWidget {
         Review(
           pathImage: 'assets/images/girl.jpg',
           name: 'Varuna Yasas',
+          Icon(Icons.star, color: Colors.yellow),
+          Icon(Icons.star, color: Colors.yellow),
+          Icon(Icons.star, color: Colors.yellow),
+          Icon(Icons.star, color: Colors.yellow),
+          Icon(Icons.star, color: Colors.yellow),
           information: '1 review 5 photos',
           comment: 'There is an amazing place in Siri Lanka',
         ),
