@@ -71,7 +71,9 @@ class Review extends StatelessWidget {
             Icon(Icons.star, color: Colors.yellow),
             Icon(Icons.star, color: Colors.yellow),
             Icon(Icons.star, color: Colors.yellow),
+            //Icino media estrella
             Icon(Icons.star_half, color: Colors.yellow),
+            //estrella vacia
             Icon(Icons.star_border, color: Colors.yellow),
           ],
         ),
