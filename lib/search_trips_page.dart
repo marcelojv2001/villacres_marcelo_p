@@ -7,22 +7,22 @@ class SearchTripsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Search'),
+        title: const Text('Search'),
         actions: [
           IconButton(
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             onPressed: () {
               showDialog(
                 context: context,
                 builder: (BuildContext context) {
                   return AlertDialog(
-                    content: Text('Marcelo Villacrés'),
+                    content: const Text('Marcelo Villacrés'),
                     actions: [
                       TextButton(
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
-                        child: Text('Close'),
+                        child: const Text('Cerrar'),
                       ),
                     ],
                   );
@@ -32,13 +32,26 @@ class SearchTripsPage extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      body: Stack(
         children: [
-          SizedBox(height: 20),
+          // Fondo de la pantalla
           Container(
-            color: Colors.blue,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                 image: AssetImage('assets/images/mountains.jpg'),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          // Contenido de la página
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const SizedBox(height: 20),
 
+              ],
+            ),
           ),
         ],
       ),
