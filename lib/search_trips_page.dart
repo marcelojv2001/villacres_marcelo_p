@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class SearchTripsPage extends StatelessWidget {
@@ -17,7 +16,6 @@ class SearchTripsPage extends StatelessWidget {
                 context: context,
                 builder: (BuildContext context) {
                   return AlertDialog(
-                    title: Text('Resultado'),
                     content: Text('Marcelo Villacrés'),
                     actions: [
                       TextButton(
@@ -37,11 +35,10 @@ class SearchTripsPage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-
           SizedBox(height: 20),
           Container(
             color: Colors.blue,
-            
+
           ),
         ],
       ),
