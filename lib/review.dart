@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 
 class Review extends StatelessWidget {
-  const Review(
-      {super.key,
-      required this.pathImage,
-      required this.name,
-      required this.information,
-      required this.comment});
+  const Review({
+    Key? key,
+    required this.pathImage,
+    required this.name,
+    required this.information,
+    required this.comment,
+  }) : super(key: key);
 
   final String pathImage;
-
   final String name;
-
   final String information;
-
   final String comment;
 
   @override
@@ -49,20 +47,35 @@ class Review extends StatelessWidget {
       ),
     );
 
-    final userInformation = Container(
-      margin: const EdgeInsets.only(
-        left: 20,
-      ),
-      child: Text(
-        information,
-        textAlign: TextAlign.left,
-        style: const TextStyle(
-          fontFamily: 'Lato',
-          fontWeight: FontWeight.bold,
-          fontSize: 11,
-          color: Color(0xff939598),
+    final userInformation = Row(
+      children: <Widget>[
+        Container(
+          margin: const EdgeInsets.only(
+            left: 20,
+          ),
+          child: Text(
+            information,
+            textAlign: TextAlign.left,
+            style: const TextStyle(
+              fontFamily: 'Lato',
+              fontWeight: FontWeight.bold,
+              fontSize: 11,
+              color: Color(0xff939598),
+            ),
+          ),
         ),
-      ),
+        const SizedBox(width: 5.0),
+        const Row(
+          children: <Widget>[
+            //
+            Icon(Icons.star, color: Colors.yellow),
+            Icon(Icons.star, color: Colors.yellow),
+            Icon(Icons.star, color: Colors.yellow),
+            Icon(Icons.star_half, color: Colors.yellow),
+            Icon(Icons.star_border, color: Colors.yellow),
+          ],
+        ),
+      ],
     );
 
     final userComment = Container(
